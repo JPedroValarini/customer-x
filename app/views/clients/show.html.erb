@@ -1,24 +1,28 @@
-<p id="notice"><%= notice %></p>
+<div class="container pad-show">
+  <div class="jumbotron">
+    <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Full name:</strong>
-  <%= @client.full_name %>
-</p>
+    <p>
+      <strong>Full name:</strong>
+      <%= @client.full_name %>
+    </p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @client.email %>
-</p>
+    <p>
+      <strong>Email:</strong>
+      <%= @client.email %>
+    </p>
 
-<p>
-  <strong>Telephone:</strong>
-  <%= @client.telephone %>
-</p>
+    <p>
+      <strong>Telephone:</strong>
+      <%= @client.telephone %>
+    </p>
 
-<p>
-  <strong>Date register:</strong>
-  <%= @client.date_register %>
-</p>
+    <p>
+      <strong>Date register:</strong>
+      <%= @client.date_register %>
+    </p>
 
-<%= link_to 'Edit', edit_client_path(@client) %> |
-<%= link_to 'Back', clients_path %>
+    <%= link_to 'Edit', edit_client_path(@client), :class => "btn btn-dark" %> 
+    <%= link_to 'Back', clients_path, :class => "btn btn-dark" %>
+  </div>
+</div>
