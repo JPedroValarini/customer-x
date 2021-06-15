@@ -1,5 +1,13 @@
-<h1>New Contact</h1>
+<div class="container">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2>Criando um novo contato</h2>
+        </div>
 
-<%= render 'form', contact: @contact %>
+        <div class="panel-body">
 
-<%= link_to 'Back', contacts_path %>
+        <%= render 'form' %>
+      </div>
+    </div>
+    <%= link_to 'Voltar', clients_path, :class => "btn btn-dark" %>
+  </div>

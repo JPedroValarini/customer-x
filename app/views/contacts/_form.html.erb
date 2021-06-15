@@ -1,37 +1,18 @@
-<%= form_with(model: contact) do |form| %>
-  <% if contact.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
-
-      <ul>
-        <% contact.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :full_name %>
-    <%= form.text_field :full_name %>
-  </div>
-
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
-  </div>
-
-  <div class="field">
-    <%= form.label :telephone %>
-    <%= form.text_field :telephone %>
-  </div>
-
-  <div class="field">
-    <%= form.label :client_id %>
-    <%= form.text_field :client_id %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+<%= form_for([@client, @contact]) do |f| %>
+  <p class="form-group">
+    <%= f.label :Nome %>
+    <%= f.text_field :full_name, autofocus: true, class:"form-control" %>
+  </p>
+  <p class="form-group">
+    <%= f.label :Email %>
+    <%= f.text_field :email, autofocus: true, class:"form-control" %>
+  </p>
+  <p class="form-group">
+    <%= f.label :Telefone %>
+    <%= f.text_field :telephone, autofocus: true, class:"form-control" %>
+  </p>
+  <p>
+    <%= f.submit class:'btn btn-primary' %>
+    <%= link_to 'Cancelar', root_path, class: 'btn btn-default'%>
+  </p>
 <% end %>

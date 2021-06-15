@@ -22,7 +22,9 @@
       <%= @client.date_register %>
     </p>
 
-    <%= link_to 'Edit', edit_client_path(@client), :class => "btn btn-dark" %> 
-    <%= link_to 'Back', clients_path, :class => "btn btn-dark" %>
+    <%= link_to pluralize(@client.contacts.size, 'Contato', 'Contatos'), client_contacts_path(@client), :class => "btn btn-dark" %>
+    <%= link_to 'Novo Contato', new_client_contact_path(@client), :class => "btn btn-primary" %>
+    <%= link_to 'Editar Contato', edit_client_contact_path(@client), :class => "btn btn-warning" %> 
+    <%= link_to 'Voltar', clients_path, :class => "btn btn-dark" %>
   </div>
 </div>

@@ -4,4 +4,6 @@ class Client < ApplicationRecord
   validates :full_name, :email, :telephone, :date_register, presence: true
   validates :email, :presence => true, :uniqueness => true, :format => EMAIL_REGEX
 
+  has_many :contacts, dependent: :destroy
+
 end
