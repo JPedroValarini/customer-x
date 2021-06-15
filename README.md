@@ -15,6 +15,7 @@
   - git clone https://github.com/JPedroValarini/customer-x.git
   - bundle install
   - rails s
+  - Banco Postgres necessário trocar o usuário e senha.
   - Crie um usuário com uma senha.
   - Crie um cliente no botão (Novo Cliente).
   - Ao criar cliente terá o CRUD completo, Mostrar, Editar, Apagar.
