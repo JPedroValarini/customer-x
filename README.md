@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Desafio full-stack CustomerX
 
-Things you may want to cover:
+## Customer-x
 
-* Ruby version
+### Gem's:
 
-* System dependencies
+  - devise: Para criação de Usuários
+  - bootstrap: para estilos
+  - devise-bootstrapped: para criação da tela de login
 
-* Configuration
+### Execução:
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  - git clone https://github.com/JPedroValarini/customer-x.git
+  - bundle install
+  - rails s
+  - Crie um usuário com uma senha.
+  - Crie um cliente no botão (Novo Cliente).
+  - Ao criar cliente terá o CRUD completo, Mostrar, Editar, Apagar.
+  - Para criar um contato para o cliente, crie o cliente e após clique no botão (mostrar).
+  - Lá terá as opções de visualizar os contatos caso tenha.
+  - Para criar novo contato clique no botão(novo contato).
+  - Para visualizar os contatos clique no botão (contatos).
