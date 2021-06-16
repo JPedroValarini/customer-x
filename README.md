@@ -14,6 +14,7 @@
 
   - git clone https://github.com/JPedroValarini/customer-x.git
   - bundle install
+  - yarn add bootstrap@4.3.1 jquery popper.js
   - rails s
   - Banco Postgres necessário trocar o usuário e senha no database.yml.
   - Crie um usuário com uma senha.
